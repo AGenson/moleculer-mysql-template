@@ -141,4 +141,4 @@ getAll: {
 
 # Actions
 
-See the description of all the actions from this adapter [here](https://github.com/AGenson/moleculer-mysql-template/blob/test/src/adapters/ACTIONS.md).
+See the description of all the actions from this adapter [here](moleculer-mysql-template/src/adapters/ACTIONS.md).
