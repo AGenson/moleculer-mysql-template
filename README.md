@@ -7,6 +7,8 @@ Moleculer template for creating a web api, with a remote MySQL database.
 **This template is based on [moleculer](https://github.com/moleculerjs/moleculer), using:**
 - [moleculer-web](https://github.com/moleculerjs/moleculer-web)
 - [moleculer-db](https://github.com/moleculerjs/moleculer-db)
+- [sequelize](https://github.com/sequelize/sequelize)
+- [mysql2](https://github.com/sidorares/node-mysql2)
 
 # Description
 
@@ -164,3 +166,23 @@ All operations on a table
 * [***removeById***](https://github.com/AGenson/moleculer-mysql-template/wiki/removeById) : Remove the entity with the given id
 * [***removeMany***](https://github.com/AGenson/moleculer-mysql-template/wiki/removeMany) : Remove several entities with the given query
 * [***removeAll***](https://github.com/AGenson/moleculer-mysql-template/wiki/removeAll) : Remove all entities from the table
+
+---
+
+# Errors
+
+## Errors handling
+Each operation functions return the wanted information, with a **specific format** (name, message, data).
+
+But they may encounters errors. And the error format is the same as for normal answers: **name, message(, data)**
+
+Here's a little description of how they are handled.
+
+See details [HERE](https://github.com/AGenson/moleculer-mysql-template/wiki/Errors-handling)
+
+## Errors handling (from service)
+The adapter will manage the format of the response, as described in functions or errors handling.
+
+But you do not especially want your client to see all those formatted responses. So here is an implementation of what could be a modulable solution.
+
+See details [HERE](https://github.com/AGenson/moleculer-mysql-template/wiki/Errors-handling-(from-service))
