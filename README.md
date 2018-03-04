@@ -87,19 +87,10 @@ module.exports = {
 		first: {
 			type: Sequelize.STRING(255),
 			allowNull: false,
-			unique: true,
 			defaultValue: "Default"
 		},
 
-		second: {
-			type: Sequelize.TEXT,
-			allowNull: false
-		},
-
-		third: {
-			type: Sequelize.DOUBLE,
-			allowNull: false
-		}
+		...
 	},
 	options: {
 		timestamps: false
@@ -129,8 +120,6 @@ module.exports = {
 
 	actions: { ... },
 
-	methods: { ... },
-
 	created() {
 		this.DB_Table1 = new Database("Table1", Filters_T1.full);
 		this.DB_Table2 = new Database("Table2"); // Default: Filters_T2.full
@@ -141,11 +130,33 @@ module.exports = {
 ## Call action on wanted table
 ```js
 getAll: {
-	params: {
-
-	},
+	params: { },
 	handler(ctx) {
 		return this.DB_Table1.find(ctx)
 	}
 }
 ```
+
+---
+
+# Functions
+## Constructor
+| Property | Type             | Default      | Description                                      |
+| :------: | :--------------: | :----------: | ------------------------------------------------ |
+| `table`  | `String`         | **required** | Name of the wanted table (defined in ./src/fixtures/database_template/models/index.js) |
+| `filter` | `Array.<String>` | all columns  | Default filter for search (columns of the table) |
+
+## Operations
+Functions are detailed [here](https://github.com/AGenson/moleculer-mysql-template/wiki/Functions)
+
+* [find](https://github.com/AGenson/moleculer-mysql-template/wiki/find)
+* [findOne](https://github.com/AGenson/moleculer-mysql-template/wiki/findOne)
+* [findById](https://github.com/AGenson/moleculer-mysql-template/wiki/findById)
+* [count](https://github.com/AGenson/moleculer-mysql-template/wiki/count)
+* [insert](https://github.com/AGenson/moleculer-mysql-template/wiki/insert)
+* [insertMany](https://github.com/AGenson/moleculer-mysql-template/wiki/insertMany)
+* [updateById](https://github.com/AGenson/moleculer-mysql-template/wiki/updateById)
+* [updateMany](https://github.com/AGenson/moleculer-mysql-template/wiki/updateMany)
+* [removeById](https://github.com/AGenson/moleculer-mysql-template/wiki/removeById)
+* [removeMany](https://github.com/AGenson/moleculer-mysql-template/wiki/removeMany)
+* [removeAll](https://github.com/AGenson/moleculer-mysql-template/wiki/removeAll)
