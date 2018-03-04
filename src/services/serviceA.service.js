@@ -18,7 +18,7 @@ const Filters_T1 = {
 module.exports = {
 	name: "serviceA",
 
-    mixins: [ Request ],
+	mixins: [ Request ],
 
 	actions: {
 

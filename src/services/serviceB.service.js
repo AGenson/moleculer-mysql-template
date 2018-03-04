@@ -23,7 +23,7 @@ const Filters_T2 = {
 module.exports = {
 	name: "serviceB",
 
-    mixins: [ Request ],
+	mixins: [ Request ],
 
 	actions: {
 

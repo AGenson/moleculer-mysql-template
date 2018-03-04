@@ -1,3 +1,5 @@
+![Moleculer logo](http://moleculer.services/images/banner.png)
+
 # moleculer-mysql-template
 
 Moleculer template for creating a web api, with a remote MySQL database.
@@ -5,6 +7,8 @@ Moleculer template for creating a web api, with a remote MySQL database.
 **This template is based on [moleculer](https://github.com/moleculerjs/moleculer), using:**
 - [moleculer-web](https://github.com/moleculerjs/moleculer-web)
 - [moleculer-db](https://github.com/moleculerjs/moleculer-db)
+
+# Description
 
 **This adapter overwrites the one from moleculer-db:**
 - So less functionalities

@@ -7,9 +7,15 @@
   },
   "keywords": [
     "microservices",
-    "moleculer"
+    "moleculer",
+    "moleculer-web",
+    "mysql"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AGenson/moleculer-mysql-template.git"
+  },
+  "author": "Anthony Genson",
   "devDependencies": {
     "moleculer-repl": "^0.3.0"
   },

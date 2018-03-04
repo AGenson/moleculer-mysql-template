@@ -246,7 +246,7 @@ class Database {
 	}
 
 	/**
-	 * 	Find all entities by query, and filter the fileds of results
+	 * 	Find all entities by query, and filter the fields of results
 	 *
 	 *	Search Fields:
 	 *  - query:	{type: "Object", optional: true}   --> ex:  { username: "username", age: { $lt: 5 } }
@@ -305,7 +305,7 @@ class Database {
 	}
 
 	/**
-	 * 	Find only one entity by query, and filter the fileds of the result
+	 * 	Find only one entity by query, and filter the fields of the result
 	 *
 	 *	Obj Fields:
 	 *  - query:	{type: "Object", optional: true}   --> ex:  { username: "username", age: { $lt: 5 } }
@@ -333,7 +333,7 @@ class Database {
 	}
 
 	/**
-	 * 	Find the entity with the given id, and filter the fileds of the result
+	 * 	Find the entity with the given id, and filter the fields of the result
 	 *
 	 *	Search Fields:
 	 *  - id:	{type: "any", optional: false}   --> ex:  { id: "G-123456" }
@@ -354,7 +354,7 @@ class Database {
 	}
 
 	/**
-	 * 	Count the entities found corresponding to the given querry
+	 * 	Count the entities found corresponding to the given query
 	 *
 	 * @param {Object} ctx - Will serve to call a service action: ctx.call
 	 * @param {Object} query - Clause WHERE --> ex:  { username: "username", age: { $lt: 5 } }
