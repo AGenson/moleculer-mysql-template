@@ -14,7 +14,7 @@ For now the actions are very limited, but when understanding the adapter, you ca
 
 **It is more an example of usage than a template, but you can :**
 - Change as you want the tables' model
-- Create your own services (just be sure to keep the configuration described in [Usage](https://github.com/AGenson/moleculer-mysql-template#give-service-access-to-database))
+- Create your own services (just be sure to keep the configuration described in [Usage](https://github.com/AGenson/moleculer-mysql-template/wiki/Usage))
 - Change API routes to your own purpose
 
 ---
@@ -40,13 +40,14 @@ npm install
 ---
 ---
 # The following is to resume functionalities
-## [See the detailed version HERE](https://github.com/AGenson/moleculer-mysql-template/wiki)
+## [-> See the detailed version here](https://github.com/AGenson/moleculer-mysql-template/wiki)
 ---
 ---
 
 # Usage
 
-## Configure database informations: ./src/fixtures/database_template/
+## Configure database informations:
+All the following configuration will be in this folder : **./src/fixtures/database_template/**
 ### Database Connection:
 database.config.js
 ```js
@@ -90,7 +91,15 @@ module.exports = {
 			defaultValue: "Default"
 		},
 
-		...
+		second: {
+			type: Sequelize.TEXT,
+			allowNull: false
+		},
+
+		third: {
+			type: Sequelize.DOUBLE,
+			allowNull: false
+		}
 	},
 	options: {
 		timestamps: false
@@ -140,13 +149,3 @@ getAll: {
 	}
 }
 ```
-
-# Constructor
-| Property | Type | Default | Description |
-| -------- | ---- | ------- | ----------- |
-| `table` | `String` | **required** | Name of the wanted table (defined in ./src/fixtures/database_template/models/index.js) |
-| `filter` | `Array.<String>` | all table's columns | Default filter for search (columns of the table) |
-
-# Functions
-
-See the description of all the actions from this adapter [here](moleculer-mysql-template/src/adapters/ACTIONS.md).
