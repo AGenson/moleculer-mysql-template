@@ -140,6 +140,7 @@ getAll: {
 ---
 
 # Functions
+Functions are detailed [here](https://github.com/AGenson/moleculer-mysql-template/wiki/Functions)
 ## Constructor
 | Property | Type             | Default      | Description                                      |
 | :------: | :--------------: | :----------: | ------------------------------------------------ |
@@ -147,34 +148,26 @@ getAll: {
 | `filter` | `Array.<String>` | all columns  | Default filter for search (columns of the table) |
 
 ## Operations
-Functions are detailed [here](https://github.com/AGenson/moleculer-mysql-template/wiki/Functions)
-
-### [find](https://github.com/AGenson/moleculer-mysql-template/wiki/find)Find all entities by query, and filter the fileds of results
-
-#### Parameters
-| Property | Type     | Default      | Description                                     |
-| :------: | :------: | :----------: | ----------------------------------------------- |
-| `ctx`    | `Object` | **required** | Will serve to call a service action: `ctx.call` |
-| `search` | `Object` | -            |                                                 |
-
-#### Return
-**Type:** `Promise`
+All operations on a table
+### [find](https://github.com/AGenson/moleculer-mysql-template/wiki/find)
+	Find all entities by query, and filter the fileds of results
 ### [findOne](https://github.com/AGenson/moleculer-mysql-template/wiki/findOne)
-Find only one entity by query, and filter the fileds of the result
-#### Parameters
-| Property | Type     | Default      | Description                                     |
-| :------: | :------: | :----------: | ----------------------------------------------- |
-| `ctx`    | `Object` | **required** | Will serve to call a service action: `ctx.call` |
-| `search` | `Object` | -            |                                                 |
-
-#### Return
-**Type:** `Promise`
+	Find only one entity by query, and filter the fileds of the result
 ### [findById](https://github.com/AGenson/moleculer-mysql-template/wiki/findById)
+	Find the entity with the given id, and filter the fileds of the result
 ### [count](https://github.com/AGenson/moleculer-mysql-template/wiki/count)
+	Count the entities found corresponding to the given querry
 ### [insert](https://github.com/AGenson/moleculer-mysql-template/wiki/insert)
+	Insert a new entity into the table of the database
 ### [insertMany](https://github.com/AGenson/moleculer-mysql-template/wiki/insertMany)
+	Insert several entities into the table of the database
 ### [updateById](https://github.com/AGenson/moleculer-mysql-template/wiki/updateById)
+	Update the entity with the given id
 ### [updateMany](https://github.com/AGenson/moleculer-mysql-template/wiki/updateMany)
+	Update all entity corresponding to the given query
 ### [removeById](https://github.com/AGenson/moleculer-mysql-template/wiki/removeById)
+	Remove the entity with the given id
 ### [removeMany](https://github.com/AGenson/moleculer-mysql-template/wiki/removeMany)
+	Remove several entities with the given query
 ### [removeAll](https://github.com/AGenson/moleculer-mysql-template/wiki/removeAll)
+	Remove all entities from the table
