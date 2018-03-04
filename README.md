@@ -15,7 +15,7 @@ For now the actions are very limited, but when understanding the adapter, you ca
 **It is more an example of usage than a template, but you can :**
 - Change as you want the tables' model
 - Create your own services (just be sure to keep the configuration described in [Usage](https://github.com/AGenson/moleculer-mysql-template/wiki/Usage))
-- Change API routes to your own purpose
+- Change API routes to your own purpose (*cf - [moleculer-web](https://github.com/moleculerjs/moleculer-web)* for more details)
 
 ---
 
@@ -140,7 +140,7 @@ getAll: {
 ---
 
 # Functions
-Functions are detailed [here](https://github.com/AGenson/moleculer-mysql-template/wiki/Functions)
+Functions are all detailed [HERE](https://github.com/AGenson/moleculer-mysql-template/wiki/Functions)
 ## Constructor
 | Property | Type             | Default      | Description                                      |
 | :------: | :--------------: | :----------: | ------------------------------------------------ |
@@ -149,25 +149,14 @@ Functions are detailed [here](https://github.com/AGenson/moleculer-mysql-templat
 
 ## Operations
 All operations on a table
-### [find](https://github.com/AGenson/moleculer-mysql-template/wiki/find)
-	Find all entities by query, and filter the fileds of results
-### [findOne](https://github.com/AGenson/moleculer-mysql-template/wiki/findOne)
-	Find only one entity by query, and filter the fileds of the result
-### [findById](https://github.com/AGenson/moleculer-mysql-template/wiki/findById)
-	Find the entity with the given id, and filter the fileds of the result
-### [count](https://github.com/AGenson/moleculer-mysql-template/wiki/count)
-	Count the entities found corresponding to the given querry
-### [insert](https://github.com/AGenson/moleculer-mysql-template/wiki/insert)
-	Insert a new entity into the table of the database
-### [insertMany](https://github.com/AGenson/moleculer-mysql-template/wiki/insertMany)
-	Insert several entities into the table of the database
-### [updateById](https://github.com/AGenson/moleculer-mysql-template/wiki/updateById)
-	Update the entity with the given id
-### [updateMany](https://github.com/AGenson/moleculer-mysql-template/wiki/updateMany)
-	Update all entity corresponding to the given query
-### [removeById](https://github.com/AGenson/moleculer-mysql-template/wiki/removeById)
-	Remove the entity with the given id
-### [removeMany](https://github.com/AGenson/moleculer-mysql-template/wiki/removeMany)
-	Remove several entities with the given query
-### [removeAll](https://github.com/AGenson/moleculer-mysql-template/wiki/removeAll)
-	Remove all entities from the table
+* [***find***](https://github.com/AGenson/moleculer-mysql-template/wiki/find) : Find all entities by query, and filter the fileds of results
+* [***findOne***](https://github.com/AGenson/moleculer-mysql-template/wiki/findOne) : Find only one entity by query, and filter the fileds of the result
+* [***findById***](https://github.com/AGenson/moleculer-mysql-template/wiki/findById) : Find the entity with the given id, and filter the fileds of the result
+* [***count***](https://github.com/AGenson/moleculer-mysql-template/wiki/count) : Count the entities found corresponding to the given querry
+* [***insert***](https://github.com/AGenson/moleculer-mysql-template/wiki/insert) : Insert a new entity into the table of the database
+* [***insertMany***](https://github.com/AGenson/moleculer-mysql-template/wiki/insertMany) : Insert several entities into the table of the database
+* [***updateById***](https://github.com/AGenson/moleculer-mysql-template/wiki/updateById) : Update the entity with the given id
+* [***updateMany***](https://github.com/AGenson/moleculer-mysql-template/wiki/updateMany) : Update all entity corresponding to the given query
+* [***removeById***](https://github.com/AGenson/moleculer-mysql-template/wiki/removeById) : Remove the entity with the given id
+* [***removeMany***](https://github.com/AGenson/moleculer-mysql-template/wiki/removeMany) : Remove several entities with the given query
+* [***removeAll***](https://github.com/AGenson/moleculer-mysql-template/wiki/removeAll) : Remove all entities from the table
