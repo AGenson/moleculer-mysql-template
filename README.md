@@ -2,16 +2,22 @@
 
 Moleculer template for creating a web api, with a remote MySQL database.
 
-This template is based on [moleculer](https://github.com/moleculerjs/moleculer), using:
+**This template is based on [moleculer](https://github.com/moleculerjs/moleculer), using:**
 - [moleculer-web](https://github.com/moleculerjs/moleculer-web)
 - [moleculer-db](https://github.com/moleculerjs/moleculer-db)
 
-This adapter overwrites the one from moleculer-db: so less functionalities, but some are added (like multi-table management per service). For now the actions are very limited, but when understanding the adapter, you can change it to add your own features.
+**This adapter overwrites the one from moleculer-db:**
+- So less functionalities
+- But some are added (like multi-table management per service).
 
-It is more an example of usage than a template, but you can :
+For now the actions are very limited, but when understanding the adapter, you can change it to add your own features.
+
+**It is more an example of usage than a template, but you can :**
 - Change as you want the tables' model
 - Create your own services (just be sure to keep the configuration described in [Usage](https://github.com/AGenson/moleculer-mysql-template#give-service-access-to-database))
 - Change API routes to your own purpose
+
+---
 
 # Features
 - Remote MySQL connection
@@ -19,6 +25,8 @@ It is more an example of usage than a template, but you can :
 - Fields filtering
 - Multi-table management (one service can do operations on several tables of the database)
 - Formatting answers from requests ( Responses / Errors )
+
+---
 
 # Install
 ``` bash
@@ -28,6 +36,14 @@ git clone https://github.com/AGenson/moleculer-mysql-template
 # Install dependencies
 npm install
 ```
+
+---
+---
+# The following is to resume functionalities
+## [See the detailed version HERE](https://github.com/AGenson/moleculer-mysql-template/wiki)
+---
+---
+
 # Usage
 
 ## Configure database informations: ./src/fixtures/database_template/
@@ -74,15 +90,7 @@ module.exports = {
 			defaultValue: "Default"
 		},
 
-		second: {
-			type: Sequelize.TEXT,
-			allowNull: false
-		},
-
-		third: {
-			type: Sequelize.DOUBLE,
-			allowNull: false
-		}
+		...
 	},
 	options: {
 		timestamps: false
@@ -139,6 +147,6 @@ getAll: {
 | `table` | `String` | **required** | Name of the wanted table (defined in ./src/fixtures/database_template/models/index.js) |
 | `filter` | `Array.<String>` | all table's columns | Default filter for search (columns of the table) |
 
-# Actions
+# Functions
 
 See the description of all the actions from this adapter [here](moleculer-mysql-template/src/adapters/ACTIONS.md).

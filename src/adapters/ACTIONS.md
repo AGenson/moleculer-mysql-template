@@ -5,7 +5,7 @@ Find all entities by query, and filter the fileds of results
 | Property | Type | Default | Description |
 | -------- | ---- | ------- | ----------- |
 | `ctx` | `Object` | **required** | Will serve to call a service action: `ctx.call` |
-| `search` | `Object` | - | Default filter for se`arch (columns of the table) |
+| `search` | `Object` | - | Default filter for search (columns of the table) |
 
 ### `search` field details:
 | Sub-Property | Type | Default | Description |
@@ -30,4 +30,4 @@ Else (nothing found / an error occured) :
 // res = list of entities found
 Promise.reject({ ... })
 ```
-* cf - details about errors *
+*cf - details about errors*

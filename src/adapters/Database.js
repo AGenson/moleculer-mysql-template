@@ -383,7 +383,7 @@ class Database {
 	}
 
 	/**
-	 * 	Insert a new entity into the table in the database
+	 * 	Insert a new entity into the table of the database
 	 *
 	 * @param {Object} ctx - Will serve to call a service action: ctx.call
 	 * @param {Object} entity
@@ -415,7 +415,7 @@ class Database {
 	}
 
 	/**
-	 * 	Insert several entities into the table
+	 * 	Insert several entities into the table of the database
 	 *
 	 * @param {Object} ctx - Will serve to call a service action: ctx.call
 	 * @param {Object[]} entities - Array of entities
