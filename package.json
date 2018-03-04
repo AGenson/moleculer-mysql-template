@@ -1,0 +1,26 @@
+{
+  "name": "moleculer-mysql-template",
+  "version": "1.0.0",
+  "description": "Moleculer-MySQL project",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    "moleculer-repl": "^0.3.0"
+  },
+  "dependencies": {
+    "moleculer": "^0.11.0",
+    "moleculer-db": "^0.7.0",
+    "moleculer-db-adapter-sequelize": "^0.1.5",
+    "moleculer-web": "^0.6.0",
+    "mysql2": "^1.5.2"
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  }
+}
