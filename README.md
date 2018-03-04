@@ -149,14 +149,32 @@ getAll: {
 ## Operations
 Functions are detailed [here](https://github.com/AGenson/moleculer-mysql-template/wiki/Functions)
 
-* [find](https://github.com/AGenson/moleculer-mysql-template/wiki/find)
-* [findOne](https://github.com/AGenson/moleculer-mysql-template/wiki/findOne)
-* [findById](https://github.com/AGenson/moleculer-mysql-template/wiki/findById)
-* [count](https://github.com/AGenson/moleculer-mysql-template/wiki/count)
-* [insert](https://github.com/AGenson/moleculer-mysql-template/wiki/insert)
-* [insertMany](https://github.com/AGenson/moleculer-mysql-template/wiki/insertMany)
-* [updateById](https://github.com/AGenson/moleculer-mysql-template/wiki/updateById)
-* [updateMany](https://github.com/AGenson/moleculer-mysql-template/wiki/updateMany)
-* [removeById](https://github.com/AGenson/moleculer-mysql-template/wiki/removeById)
-* [removeMany](https://github.com/AGenson/moleculer-mysql-template/wiki/removeMany)
-* [removeAll](https://github.com/AGenson/moleculer-mysql-template/wiki/removeAll)
+### [find](https://github.com/AGenson/moleculer-mysql-template/wiki/find)Find all entities by query, and filter the fileds of results
+
+#### Parameters
+| Property | Type     | Default      | Description                                     |
+| :------: | :------: | :----------: | ----------------------------------------------- |
+| `ctx`    | `Object` | **required** | Will serve to call a service action: `ctx.call` |
+| `search` | `Object` | -            |                                                 |
+
+#### Return
+**Type:** `Promise`
+### [findOne](https://github.com/AGenson/moleculer-mysql-template/wiki/findOne)
+Find only one entity by query, and filter the fileds of the result
+#### Parameters
+| Property | Type     | Default      | Description                                     |
+| :------: | :------: | :----------: | ----------------------------------------------- |
+| `ctx`    | `Object` | **required** | Will serve to call a service action: `ctx.call` |
+| `search` | `Object` | -            |                                                 |
+
+#### Return
+**Type:** `Promise`
+### [findById](https://github.com/AGenson/moleculer-mysql-template/wiki/findById)
+### [count](https://github.com/AGenson/moleculer-mysql-template/wiki/count)
+### [insert](https://github.com/AGenson/moleculer-mysql-template/wiki/insert)
+### [insertMany](https://github.com/AGenson/moleculer-mysql-template/wiki/insertMany)
+### [updateById](https://github.com/AGenson/moleculer-mysql-template/wiki/updateById)
+### [updateMany](https://github.com/AGenson/moleculer-mysql-template/wiki/updateMany)
+### [removeById](https://github.com/AGenson/moleculer-mysql-template/wiki/removeById)
+### [removeMany](https://github.com/AGenson/moleculer-mysql-template/wiki/removeMany)
+### [removeAll](https://github.com/AGenson/moleculer-mysql-template/wiki/removeAll)
