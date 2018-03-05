@@ -2,6 +2,7 @@
   "name": "moleculer-mysql-template",
   "version": "1.0.0",
   "description": "Moleculer-MySQL project",
+  "private": true,
   "scripts": {
     "start": "node ./index.js"
   },
@@ -15,6 +16,7 @@
     "type": "git",
     "url": "git@github.com:AGenson/moleculer-mysql-template.git"
   },
+  "homepage": "https://github.com/AGenson/moleculer-mysql-template#README",
   "author": "Anthony Genson",
   "devDependencies": {
     "moleculer-repl": "^0.3.0"
