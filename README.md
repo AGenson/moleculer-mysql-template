@@ -202,7 +202,7 @@ See details [HERE](https://github.com/AGenson/moleculer-mysql-template/wiki/Erro
 ---
 
 # User account & Priviledge Management
-Detailed description of authentification processes and use account functions.
+Detailed description of authentification processes and user account functions.
 
 * [API Gateway](https://github.com/AGenson/moleculer-mysql-template/wiki/API-Gateway)
 * [Auth Service](https://github.com/AGenson/moleculer-mysql-template/wiki/Auth-Service)
