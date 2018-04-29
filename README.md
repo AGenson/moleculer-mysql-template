@@ -2,13 +2,15 @@
 
 # moleculer-mysql-template
 
-Moleculer template for creating a web api, with a remote MySQL database.
+Moleculer template for creating a secure web api, with a remote MySQL database, and a default account management.
 
 **This template is based on [moleculer](https://github.com/moleculerjs/moleculer), using:**
 - [moleculer-web](https://github.com/moleculerjs/moleculer-web)
 - [moleculer-db](https://github.com/moleculerjs/moleculer-db)
 - [sequelize](https://github.com/sequelize/sequelize)
 - [mysql2](https://github.com/sidorares/node-mysql2)
+- [password-hash](https://github.com/davidwood/node-password-hash)
+- [JSON Web Token](https://github.com/auth0/node-jsonwebtoken) (JWT)
 
 # Description
 
@@ -23,6 +25,11 @@ For now the actions are very limited, but when understanding the adapter, you ca
 - Create your own services (just be sure to keep the configuration described in [Usage](https://github.com/AGenson/moleculer-mysql-template/wiki/Usage))
 - Change API routes to your own purpose (*cf - [moleculer-web](https://github.com/moleculerjs/moleculer-web)* for more details)
 
+**New**
+- Securing the API with an authentification process (password / tokens)
+- Create, manage or delete user accounts
+- ADMIN priviledge management
+
 ---
 
 # Features
@@ -31,6 +38,11 @@ For now the actions are very limited, but when understanding the adapter, you ca
 - Fields filtering
 - Multi-table management (one service can do operations on several tables of the database)
 - Formatting answers from requests ( Responses / Errors )
+
+**New Features**
+- Authentification of http request
+- Default user account management
+- Securing of accounts with hashed password and tokens management
 
 ---
 
@@ -145,7 +157,7 @@ getAll: {
 
 ---
 
-# Functions
+# Database Management Functions
 Functions are all detailed [HERE](https://github.com/AGenson/moleculer-mysql-template/wiki/Functions)
 ## Constructor
 | Property | Type             | Default      | Description                                      |
@@ -169,7 +181,7 @@ All operations on a table
 
 ---
 
-# Errors
+# Database Errors
 
 ## Errors handling
 Each operation functions return the wanted information, with a **specific format** (name, message, data).
@@ -186,3 +198,7 @@ The adapter will manage the format of the response, as described in functions or
 But you do not especially want your client to see all those formatted responses. So here is an implementation of what could be a modulable solution.
 
 See details [HERE](https://github.com/AGenson/moleculer-mysql-template/wiki/Errors-handling-(from-service))
+
+---
+
+# Account & Priviledge Management Functions

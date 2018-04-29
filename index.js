@@ -15,8 +15,9 @@ DatabaseServices.forEach( (service) => {
 
 
 
-broker.start().then(() => {
-	broker.repl();
-
-	console.log("Server started");
-});
+broker.start()
+	.then( () => {
+		broker.repl();
+		broker.call("users.createAdminIfNotExists")
+			.then( () => console.log("Server started"));
+	});
