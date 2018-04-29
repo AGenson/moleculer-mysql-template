@@ -1,8 +1,8 @@
 
 module.exports = {
-	host: "den1.mysql4.gear.host",
+	host: "mysql.example.host",
 	port: "3306", // Default for mysql => 3306
-	database: "bddtest",
-	username: "bddtest",
-	password: "N8aM_HDHmG"
+	database: "db_example",
+	username: "db_user",
+	password: "db_password"
 }
