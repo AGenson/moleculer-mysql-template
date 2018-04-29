@@ -186,5 +186,6 @@ module.exports = {
 			} else
 				return this.requestError(CodeTypes.AUTH_NO_TOKEN);
 		}
+
 	}
 };

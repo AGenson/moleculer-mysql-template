@@ -27,15 +27,15 @@ module.exports = {
 			allowNull: false
 		},
 
-		age: {
-			type: Sequelize.INTEGER,
-			allowNull: true
-		},
-
 		role: {
 			type: Sequelize.STRING(10),
 			allowNull: false,
 			defaultValue: "USER"
+		},
+
+		age: {
+			type: Sequelize.INTEGER,
+			allowNull: true
 		}
 	},
 	options: {
